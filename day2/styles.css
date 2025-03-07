@@ -16,6 +16,7 @@ header {
 
 h1 {
     margin: 0;
+    color: #d33535;
 }
 
 section {
@@ -28,12 +29,12 @@ section {
 
 p {
     font-size: 1.2em;
-    color: #333;
+    color: #2cb13a;
     margin-bottom: 10px;
 }
 
 h2 {
-    color: #2C3E50;
+    color: #0c69c5;
 }
 
 hr {
@@ -50,3 +51,6 @@ footer {
     color: white;
 }
 
+ul{
+    color: #2cb13a;
+}
