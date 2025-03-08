@@ -6,9 +6,12 @@ body {
     margin: 0;
     padding: 0;
 }
+h1 {
+    color: #cf1414;
+}
 
 header {
-    color: #fff;
+    /* background-color: rgba(225, 126, 91, 0.7); */
     padding: 10px 0;
     text-align: center;
 }
