@@ -1,0 +1,31 @@
+body {
+    background-image: url("./image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #cf1414;
+}
+
+header {
+    /* background-color: rgba(225, 126, 91, 0.7); */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    background-color: rgba(225, 126, 91, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    gap: 10px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
