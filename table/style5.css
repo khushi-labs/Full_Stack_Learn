@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(166, 230, 208);
+}
+.box{
+    background-color: rgb(183, 117, 36);
+}
+th{
+    background-color: rgb(137, 201, 203);
+}
+h1{
+    text-align: center;
+    color: rgb(152, 119, 79);
+    text-decoration: underline;
+    text-decoration-color: rgb(120, 110, 107);
+}
+.bigbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+td{
+     color: rgb(5, 22, 50);
+}
