@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    color: rgb(113, 97, 190);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100%;
+    
+}
+.box1{
+    background-color: rgb(166, 243, 152);
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    position: relative;
+    
+}
+.box2{
+    background-color: rgb(170, 186, 167);
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    position: relative;
+
+}
+.box3{
+    background-color: rgb(223, 176, 174);
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    position: relative;
+}
+.box4{
+    background-color: rgb(238, 147, 229);
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+}
+.ghar{
+    margin-top: 20px;
+}
+.photo{
+    margin-top: 20px;
+}
+.phone{
+    margin-top: 20px;
+}
+.aadmi{
+    margin-top: 20px;
+}
+
+
+.dibba{
+    background-color: rgb(238, 177, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 1000%;
+}
