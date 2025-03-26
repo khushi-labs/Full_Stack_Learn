@@ -1,0 +1,29 @@
+.bigbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+td{
+     color: rgb(10, 126, 32);
+    font-size: large;
+    color: rgb(98, 12, 71);
+    text-justify: inter-cluster;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(82, 5, 158);
+    text-decoration: underline;
+    text-decoration-color: rgb(120, 110, 107);
+}
+body{
+    background-color: rgb(166, 230, 208);
+}
+.box{
+    background-color: rgb(234, 236, 124);
+
+}
+.dibba{
+    border-radius: 40%;
+}
