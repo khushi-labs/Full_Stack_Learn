@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Information Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Basic Information Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <label>Education:</label><br>
+      <input type="checkbox" id="highschool" name="education" value="High School">
+      <label for="highschool">High School</label><br>
+      <input type="checkbox" id="Intermediate" name="education" value="Intermediate">
+      <label for="bachelor">Intermediate</label><br>
+      <input type="checkbox" id="masters" name="education" value="Graduation">
+      <label for="Graduation">Graduation</label><br><br>
+
+      <label for="tea">Do you like tea?</label>
+      <select id="tea" name="tea" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
