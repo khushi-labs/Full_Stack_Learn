@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive JavaScript Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>JavaScript Interactions</h1>
+
+  <h2>1. Basic Information Form</h2>
+  <form id="infoForm" onsubmit="event.preventDefault(); displayFormData();">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <button type="submit">Submit</button>
+  </form>
+  <pre id="formOutput"></pre>
+
+  <h2>2. Change Image on Button Click</h2>
+  <img id="image" src="https://via.placeholder.com/150" alt="Image" width="150">
+  <button onclick="changeImage()">Change Image</button>
+
+  <h2>3. Increase/Decrease Font Size</h2>
+  <div id="textBox">This is some text you can resize!</div>
+  <button onclick="changeFontSize('increase')">Increase Font Size</button>
+  <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+
+  <h2>4. Show Current Date and Time</h2>
+  <button onclick="showDateTime()">Show Date & Time</button>
+  <pre id="dateTimeOutput"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
