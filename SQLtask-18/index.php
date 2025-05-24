@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "if0_39035439_library";
+$dbname = "library";
 $message = "";
 
 $conn = new mysqli($servername, $username, $password);
