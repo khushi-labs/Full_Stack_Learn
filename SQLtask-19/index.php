@@ -21,13 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         case "alter_table_add_column":
             $check = $conn->query("SHOW COLUMNS FROM book_records LIKE 'no_of_pages'");
             if ($check->num_rows > 0) {
-                $message = "⚠️ Column 'no_of_pages' already exists.";
+                $message = "Column 'no_of_pages' already exists.";
             } else {
                 $sql = "ALTER TABLE book_records ADD no_of_pages INT";
                 if ($conn->query($sql) === TRUE) {
-                    $message = "✅ Column 'no_of_pages' added successfully.";
+                    $message = "Column 'no_of_pages' added successfully.";
                 } else {
-                    $message = "❌ Error adding column: " . $conn->error;
+                    $message = "Error adding column: " . $conn->error;
                 }
             }
             break;
@@ -35,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         case "add_primary_key":
             $check = $conn->query("SHOW INDEX FROM book_records WHERE Key_name = 'PRIMARY'");
             if ($check->num_rows > 0) {
-                $message = "⚠️ Primary key already exists.";
+                $message = "Primary key already exists.";
             } else {
                 $sql = "ALTER TABLE book_records ADD PRIMARY KEY (Book_No)";
                 if ($conn->query($sql) === TRUE) {
-                    $message = "✅ Primary key added to 'Book_Library_No'.";
+                    $message = "Primary key added to 'Book_Library_No'.";
                 } else {
-                    $message = "❌ Error adding primary key: " . $conn->error;
+                    $message = "Error adding primary key: " . $conn->error;
                 }
             }
             break;
@@ -51,9 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     (Book_No, Book_Name, Author_Name, Book_Edition, Price, no_of_pages)
                     VALUES (1001, 'Mathematics', 'RD Sharma', '1st', 650.00, 464)";
             if ($conn->query($sql) === TRUE) {
-                $message = "✅ Sample data inserted successfully.";
+                $message = "Sample data inserted successfully.";
             } else {
-                $message = "❌ Error inserting data: " . $conn->error;
+                $message = "Error inserting data: " . $conn->error;
             }
             break;
     }
@@ -80,7 +80,6 @@ if ($tableCheck && $tableCheck->num_rows > 0) {
                 $tableHTML .= "</tr>";
             }
         } else {
-            // No data rows, but still show empty row placeholders
             $tableHTML .= "<tr>";
             for ($i = 0; $i < $fields->num_rows; $i++) {
                 $tableHTML .= "<td><em>—</em></td>";
